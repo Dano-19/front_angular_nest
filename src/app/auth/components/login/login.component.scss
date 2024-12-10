@@ -1,0 +1,66 @@
+
+.surface-ground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    min-width: 100vw; 
+    overflow: hidden; 
+    background-color: #f4f5f7; 
+}
+
+
+.surface-card {
+    background-color: #ffffff; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 16px; 
+    width: 100%; 
+}
+
+
+.surface-card {
+    background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);
+    border-radius: 56px; 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 50pxs;
+    padding: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    background-color: #f9f9f9; 
+    margin-bottom: 1.5rem; 
+}
+
+label {
+    font-size: 1.125rem; 
+    font-weight: 600; 
+    color: #4e4e4e; 
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.875rem; 
+    font-weight: 500;
+}
+
+
+img.mb-5 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
