@@ -1,6 +1,6 @@
+import {HttpClient} from '@angular/common/http'
 import { inject, Injectable } from '@angular/core';
 import { environment } from '../../../../environments/environment.development';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +15,11 @@ export class CategoriaService {
     }
     funGuardar (registro: any){
       return this.http.post(`${this.baseUrl}/categoria`, registro)
+    }
+    funModificar (id: number, registro: any){
+      return this.http.path(`${this.baseUrl}/categoria/${id}`, registro)
+    }
+    funEliminar (id:number) {
+      return this.http.delete(`${this.baseUrl}/categoria/${id}`)
     }
 }
